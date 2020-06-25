@@ -15,6 +15,7 @@ header nav p {
   padding-left: 20px; }
 
 h1.title {
+  color: var(--color-bg-heading);
   text-transform: uppercase;
   font-weight: 500;
   text-align: center;
@@ -46,15 +47,89 @@ section h2 {
   margin-top: 10px;
   margin-bottom: 20px; }
 
-.mission {
+.mission, .for-volunteers {
   color: #fff;
   background: var(--color-pantries); }
 
-.team {
+.team, .donate, .glossary, .for-donors {
   color: var(--color-bg-heading); }
 
-.team h2 {
+.team h2, .donate h2, .glossary h2 {
   color: var(--color-pantries); }
+
+.donate {
+  margin-bottom: 0; }
+
+.donate .btn {
+  margin: 20px auto; }
+
+dl {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+dl dt {
+  font-weight: 600; }
+
+dl dd {
+  margin-left: 0;
+  margin-bottom: 32px; }
+
+dl dd:last-child {
+  margin-bottom: 0; }
+
+.btn {
+  border-radius: 6px;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.btn-white {
+  background: var(--color-bg); }
+
+.btn-orange {
+  color: #fff;
+  font-size: 18px;
+  background: var(--color-meals);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+.btn-outline {
+  font-size: 14px;
+  color: var(--color-pantries);
+  border: 1px solid var(--color-pantries); }
+
+.cards {
+  justify-content: var(--justify-important);
+  padding: 0;
+  margin-top: 0; }
+
+.cards aside {
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0; }
+
+.cards aside .btn {
+  margin-bottom: 20px; }
+
+.cards aside h3 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #fff;
+  margin: 20px 0; }
+
+aside.signup {
+  background: var(--color-pantries); }
+
+aside.signup .btn-white {
+  color: var(--color-pantries); }
+
+aside.volunteer {
+  background: var(--color-meals); }
+
+aside.volunteer .btn-white {
+  color: var(--color-meals); }
+
+.for-donors {
+  background: var(--color-bg); }
 
 .partners {
   background: var(--color-bg);
@@ -90,6 +165,12 @@ footer nav a {
   text-decoration: none; }
 
 @media only screen and (min-width: 64em) {
+  .cards {
+    flex-wrap: nowrap;
+    padding: 32px; }
+  .cards aside {
+    margin-left: 1rem;
+    margin-right: 1rem; }
   .partners {
     flex-direction: row; }
   .partners .logo {

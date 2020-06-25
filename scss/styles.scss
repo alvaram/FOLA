@@ -26,7 +26,7 @@
     --justify-normal: left;
     --line-height: 1.5;
 
-    --width-card: 285px;
+    --width-card: 550px;
     --width-card-medium: 460px;
     --width-card-wide: 800px;
 
@@ -116,7 +116,7 @@ section aside {
     box-shadow: var(--box-shadow) var(--color-shadow);
     margin: 1rem;
     padding: 1.25rem;
-    width: var(--width-card);
+    max-width: var(--width-card);
 }
 
 section aside:hover {
